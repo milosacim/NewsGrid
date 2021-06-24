@@ -1,9 +1,27 @@
+.category {
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+    display: inline-block;
+    font-size: 0.55rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    padding: 0.4rem 0.6rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.category-sports { background: var(--sports-color) }
+.category-ent { background: var(--ent-color) }
+.category-tech { background: var(--tech-color) }
+
 body {
-    background-color: rgb(247, 244, 244);
+    background-color: #f3f3f3;
+    font-family: 'Lato', sans-serif;
 }
 
 h1, h2, h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Staatliches', cursive;
 }
 
 #navigation {
@@ -21,14 +39,19 @@ h1, h2, h3 {
 }
 
 #navigation ul {
-    display: flex;
+    display: grid;
     justify-self: end;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     list-style-type: none;
 }
 
 #navigation ul li a{
     text-decoration: none;
     padding: 5px; 
+    font-weight: bold;
+    color: #333;
+    padding: 0.75rem;
 }
 
 #navigation ul li a:hover {
@@ -47,6 +70,7 @@ h1, h2, h3 {
 
 #navigation .icons a i{
     color: grey;
+
 }
 
 #header {
