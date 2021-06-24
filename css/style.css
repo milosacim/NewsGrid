@@ -1,5 +1,9 @@
 body {
-    font-family: Algerian;
+    background-color: rgb(247, 244, 244);
+}
+
+h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #navigation {
@@ -25,6 +29,16 @@ body {
 #navigation ul li a{
     text-decoration: none;
     padding: 5px; 
+}
+
+#navigation ul li a:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+#navigation ul li a:active {
+    background-color: #dc3545;
+    color:white;
 }
 
 #navigation .logo {
@@ -65,11 +79,14 @@ body {
     z-index: 2;
 }
 
+#articles {
+    padding: 1rem;
+}
+
 #articles .articles-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-
 }
 
 #articles .articles-container > :first-child,
@@ -84,6 +101,25 @@ body {
 #articles .articles-container > :last-child {
     grid-column: 2 / span 2;
   }
+
+#articles .card {
+    display: block;
+    padding: 1rem;
+    border: none;
+}
+
+#articles .card h3, p{
+    display: block;
+
+}
+
+#articles .bg-dark p{
+    color: white;
+}
+
+#articles .bg-danger p{
+    color: white;
+}
 
 img {
     width: 100%;
