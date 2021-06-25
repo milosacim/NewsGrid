@@ -51,7 +51,7 @@ h1, h2, h3{
 
 #navigation ul li a{
     text-decoration: none;
-    padding: 5px; 
+    padding: 0.5rem; 
     font-weight: bold;
     color: #333;
     padding: 0.75rem;
@@ -67,13 +67,17 @@ h1, h2, h3{
     color:white;
 }
 
+#navigation ul li a.active {
+    background-color: #dc3545;
+    color:white;
+}
+
 #navigation .logo {
     width: 180px;
 }
 
 #navigation .icons a i{
     color: grey;
-
 }
 
 #header {
