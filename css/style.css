@@ -36,7 +36,7 @@ h1, h2, h3{
 
 #navigation .container {
     display: grid;
-    grid-template-columns: 6fr 3fr 2fr;
+    grid-template-columns: 5fr 3fr 2fr;
     align-items: center;
     padding: 1rem;
 }
@@ -83,7 +83,7 @@ h1, h2, h3{
 #header {
     color: #fff;
     background:#333;
-    padding: 20px;
+    padding: 1rem;
     position: relative;
 }
 
