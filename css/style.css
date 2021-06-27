@@ -204,8 +204,39 @@ background-color: orange;
     align-items: center;
 }
 
+#footer .list a{
+    border-bottom: dotted 1px #555;
+}
+
 #footer .logo {
     width: 180px;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.about-container > *:first-child {
+    grid-row: 1 / span 3;
+}
+
+#about h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#about aside {
+    color: #fff;
+}
+#about aside h3{
+    color: #fff;
+}
+
+#about aside a {
+    display: block;
 }
 
 
