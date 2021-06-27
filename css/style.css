@@ -20,10 +20,25 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
 h1, h2, h3{
     color: #333;
     font-size: 1.25rem;
     font-family: 'Staatliches', cursive;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
     text-decoration: none;
 }
 
@@ -58,8 +73,7 @@ h1, h2, h3{
 }
 
 #navigation ul li a:hover {
-    background-color: #dc3545;
-    color: white;
+    background-color: #f3f3f3;
 }
 
 #navigation ul li a:active {
@@ -78,6 +92,7 @@ h1, h2, h3{
 
 #navigation .icons a i{
     color: grey;
+    margin-right: .5rem;
 }
 
 #header {
@@ -125,8 +140,8 @@ h1, h2, h3{
     grid-gap: 10px;
 }
 
-#articles .articles-container > :first-child,
-#articles .articles-container > :last-child {
+#articles .articles-container > *:first-child,
+#articles .articles-container > *:last-child {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
@@ -183,7 +198,7 @@ img {
 #footer .footer-container > *:last-child {
     background: #444;
     grid-column: 1 / span 4;
-    padding: 0.5rem;
+    padding: .5rem;
     text-align: center;
     font-size: 0.75rem;
 }
@@ -199,16 +214,14 @@ img {
 background-color: orange;
 }
 
-.list{
-    display: grid;
-    align-items: center;
-    width: 90%;
+.list li{
     padding: .5rem 0;
+    border-bottom: dotted 1px #555;
+    width: 90%;
 }
 
-.list a{
-    border-bottom: dotted 1px #555;
-    
+.list li a:hover {
+    color: #dc3545 !important;
 }
 
 #footer .logo {
@@ -249,13 +262,19 @@ background-color: orange;
     margin: 2rem 0;
 }
 
-#article .article-container >:first-child {
+#article .article-container >*:first-child {
     grid-row: 1 / span 5;
 }
 
-#article .article-container .list {
-    display: inline-block;
-    list-style-type: none;
-
+.article-heading {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
+#article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f3f3f3;
+}
