@@ -199,13 +199,16 @@ img {
 background-color: orange;
 }
 
-#footer .list{
+.list{
     display: grid;
     align-items: center;
+    width: 90%;
+    padding: .5rem 0;
 }
 
-#footer .list a{
+.list a{
     border-bottom: dotted 1px #555;
+    
 }
 
 #footer .logo {
@@ -239,6 +242,20 @@ background-color: orange;
     display: block;
 }
 
+#article .article-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 1.5rem;
+    margin: 2rem 0;
+}
 
+#article .article-container >:first-child {
+    grid-row: 1 / span 5;
+}
 
+#article .article-container .list {
+    display: inline-block;
+    list-style-type: none;
+
+}
 
