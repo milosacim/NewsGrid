@@ -278,3 +278,7 @@ background-color: orange;
     padding: 0.5rem;
     background-color: #f3f3f3;
 }
+
+#article aside a {
+    display: block;
+}
