@@ -95,6 +95,22 @@ a {
     margin-right: .5rem;
 }
 
+#navigation .fa-facebook:hover {
+    color: darkblue;
+}
+
+#navigation .fa-twitter:hover {
+    color: #00acee;
+}
+
+#navigation .fa-instagram:hover {
+    color: #bc2a8d ;
+}
+
+#navigation .fa-youtube:hover {
+    color: #c4302b ;
+}
+
 #header {
     color: #fff;
     background:#333;
